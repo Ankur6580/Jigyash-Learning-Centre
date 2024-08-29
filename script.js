@@ -98,6 +98,6 @@ function checkScroll() {
 window.addEventListener('scroll', checkScroll);
 
 // Close the pop-up when the user clicks the button and re-enable scrolling
-document.getElementById('close-popup').addEventListener('click', hidePopup);
+document.getElementById('close-payment-popup').addEventListener('click', hidePopup);
 
 
