@@ -23,7 +23,7 @@
       <ul class="nav-links" id="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#event-details">Event Details</a></li>
-        <li><a href="#ff-compose">Register</a></li>
+        <li><a href="#payment-details">Register</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -34,7 +34,7 @@
     <a href="javascript:void(0)" class="closebtn" id="closebtn">&times;</a>
     <a href="#about">About</a>
     <a href="#event-details">Event Details</a>
-    <a href="#ff-compose">Register</a>
+    <a href="#payment-details">Register</a>
     <a href="#contact">Contact</a>
   </div>
 
@@ -46,7 +46,7 @@
     <section id="home" class="hero-section">
       <h1>ADRE Mock Test 2024</h1>
       <p>Prepare with the best! Register for the mock test now.</p>
-      <a href="#ff-compose" class="btn-primary">Register Now</a>
+      <a href="#payment-details" class="btn-primary">Register Now</a>
     </section>
 
     <!-- About Section -->
@@ -74,13 +74,22 @@
           href="#locate">Locate</a></p>
       <p><strong>Fee:</strong> ₹99 (Ninety Nine Rupees only)</p>
       <p><strong>Syllabus & Pattern:</strong> As per APSC guidelines.</p>
-      <div class="payment-info">
+      <!-- Payment details -->
+      <div class="payment-info" id="payment-details">
         <h3>Payment Details</h3>
         <p>Scan the QR code below to pay the registration fee:</p>
-        <img
-          src="https://static.vecteezy.com/system/resources/previews/002/557/391/original/qr-code-for-scanning-free-vector.jpg"
-          alt="UPI QR Code" class="qr-code">
-        <p><strong>UPI ID:</strong> jigyaslearningcentre@oksbi</p>
+        <img src="./assets/QRcode.jpg" alt="UPI QR Code" class="qr-code">
+        <p><strong>UPI ID:</strong> zishnunath100@oksbi</p>
+        <!-- Custom Pop-up Card -->
+        <div id="payment-popup-card" class="payment-popup-card">
+          <div class="popup-content">
+            <p id="alert-note">Important Note ! </p>
+            <p>Please note your <strong>transaction ID</strong> after successful payment and enter it in the form below for verification purposes.</p>
+            <p id="countdown">The button will appear in <span id="timer">10</span> seconds...</p>
+            <button id="close-popup" style="display: none;">Got It!</button>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -116,26 +125,27 @@
           <input type="submit" value="Submit">
         </form>
 
+        <!-- Loading Spinner -->
+        <div id="loading-spinner" class="spinner"></div>
 
-
+        <!-- Thank You Popup -->
+        <div id="thank-you-popup" class="popup">
+          <div class="popup-content">
+            <h2>Thank You!</h2>
+            <p>Thank you for registering for the mock test! <br> Best of luck—this is your first step towards success in
+              the ADRE exam. Give it your best shot!</p>
+            <button id="close-popup">Close</button>
+          </div>
+        </div>
       </div>
-
-
     </section>
-
-    <!-- <div class="iframe-container">
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfBJuwhMsualTb-4ncCi8j1ziGxPxq59UuFnRxLhJjm0uiFGQ/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-    </div> -->
-    <!-- <div id="ff-compose"></div>
-    <script async defer
-      src="https://formfacade.com/include/102861431621735557672/form/1FAIpQLSfBJuwhMsualTb-4ncCi8j1ziGxPxq59UuFnRxLhJjm0uiFGQ/classic.js?div=ff-compose"></script> -->
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
       <h2>Contact Us</h2>
       <p>For more information, contact us at:</p>
       <div id="contact-details"><strong>Phone:</strong>
-        <a href="tel:+916000467652">+91 60004 67652</a>
+        <a href="tel:+916000467652">+91 91015 34781</a>
         <a href="tel:+919954947732">+91 99549 47732</a>
         <p><strong>Email:</strong> <a
             href="mailto:jigyaslearningcentre.help@gmail.com">jigyaslearningcentre.help@gmail.com</a></p>
