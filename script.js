@@ -68,7 +68,7 @@ function hidePopup() {
 function startCountdown() {
   let timeLeft = 10; // 10 seconds countdown
   const timerElement = document.getElementById('timer');
-  const button = document.getElementById('close-popup');
+  const button = document.getElementById('close-payment-popup');
 
   const countdownInterval = setInterval(() => {
       timeLeft--;
