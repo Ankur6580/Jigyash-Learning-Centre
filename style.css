@@ -289,6 +289,12 @@ section {
   font-size: large;
 }
 
+#sample-img{
+  display: block;
+  max-height: 60vh;
+  margin: 10px auto;
+}
+
 #close-payment-popup{
   background-color: red;
   color: white;
